@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  contextPath: /healthcloud-server
+  tomcat:
+    uri-encoding: UTF-8
+
+mysql:
+  connection:
+    url: jdbc:mysql://localhost:3306/healthcloud_server?useUnicode=true&characterEncoding=UTF8&autoReconnect=true&rewriteBatchedStatements=TRUE&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
