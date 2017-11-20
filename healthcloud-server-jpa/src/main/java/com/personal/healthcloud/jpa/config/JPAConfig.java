@@ -56,7 +56,7 @@ public class JPAConfig {
         return manager;
     }
 
-    @Bean(name = "hcDataSource", initMethod = "init", destroyMethod = "close")
+    @Bean
     @Profile("!build-test")
     public DataSource dataSource() throws PropertyVetoException {
         DruidDataSource dataSource = new DruidDataSource();
